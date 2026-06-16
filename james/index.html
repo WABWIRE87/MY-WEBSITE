@@ -1,0 +1,191 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Wabwire | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">James Wabwire </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm James Wabwire</h1>
+
+                <p class="subtitle">
+                   BASED IN KENYA | ICT SPECIALIST | BRAND PROMOTER. 
+                </p>
+
+                <p class="hero-description">
+                    Welcome! I’m James Wabwire, a passionate IT enthusiast focused on building modern, user-friendly web and mobile applications that help brands tell compelling stories, connect, engage, and inspire. I also enjoy developing intelligent systems that automate tasks, analyze data, and support decision-making across industries such as education, healthcare, and business. Alongside my tech expertise, I am a DJ and MC who creates energetic and memorable experiences by mixing different music genres to keep audiences engaged and hosting events smoothly to ensure everything flows well. I enjoy reading the crowd, adapting to different vibes, and using both technology and entertainment to deliver impactful experiences for weddings, parties, corporate events, and social gatherings.
+
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+
+                    <a href="dj.png" download class="btn btn-secondary">
+                        Download 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <h2>SKILLS</h2>
+
+            <div class="about-content">
+                <div class="skills">
+
+
+                    <div class="skills-grid">
+
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">Graphic Design</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Microsoft Office</span>
+                        <span class="skill-tag">DJing</span>
+                        <span class="skill-tag">Master of Ceremonies</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <h2>Get In Touch</h2>
+
+            <p class="contact-subtitle">
+                Let's enguage!
+            </p>
+
+            <div class="contact-methods">
+
+                <div class="contact-method">
+                    <a href="mailto:blaqent254@gmail.com" class="contact-icon">
+                        <img src="mail.png" alt="Email">
+                    </a>
+
+                    <h3>Email</h3>
+                </div>
+
+                <div class="contact-method">
+                    <a href="tel:+254755025204" class="contact-icon">
+                        <img src="call.png" alt="Phone">
+                    </a>
+
+                    <h3>Phone</h3>
+                </div>
+
+                <div class="contact-method">
+                    <a href="https://wa.me/254742891173" target="_blank" class="contact-icon whatsapp-icon">
+                        <img src="whats.png" alt="WhatsApp">
+                    </a>
+
+                    <h3>WhatsApp</h3>
+                </div>
+                <div class="contact-method">
+                    <a href="https://www.youtube.com/@BlaqEntRepublik" target="_blank" class="contact-icon youtube-icon">
+                        <img src="youtube.png" alt="YouTube">
+                    </a>
+                    <h3>Youtube</h3>
+                </div>
+                 <div class="contact-method">
+                    <a href="https://www.instagram.com/iam_blaqchild?igsh=aDRqdmlwZTY0Yjl0" target="_blank" class="contact-icon instagram-icon">
+                        <img src="inst.png" alt="instagram">
+                    </a>
+                    <h3>instagram</h3>
+                </div>
+                 <div class="contact-method">
+                    <a href="https://www.facebook.com/profile.php?id=100067482682282" target="_blank" class="contact-icon facebook-icon">
+                        <img src="face.png" alt="facebook">
+                    </a>
+                    <h3>facebook</h3>
+                </div>
+
+                 <div class="contact-method">
+                    <a href="https://www.linkedin.com/in/james-audrine-wabwire-06415a406?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-icon linkedin-icon">
+                        <img src="link.png" alt="linkedin">
+                    </a>
+                    <h3>linkedin</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>&copy; 2026 James Wabwire. All Rights Reserved.</p>
+
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
+```
